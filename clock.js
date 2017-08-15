@@ -27,6 +27,8 @@ class Clock {
     speakPartOfDay() {
         if(this.time === '13:00') {
             return 'in the afternoon';
+        } if(this.time === '18:00') {
+            return 'in the evening';
         }
         return 'in the morning';
     }
