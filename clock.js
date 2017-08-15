@@ -24,6 +24,10 @@ class Clock {
         return "o'clock";
     }
 
+    speakPartOfDay() {
+        return 'in the morning';
+    }
+
     speak() {
         if (this.time === '12:00') {
             return 'midday';

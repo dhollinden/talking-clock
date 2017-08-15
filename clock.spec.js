@@ -57,7 +57,7 @@ describe('the talking clock', () => {
         expect(clock.speakMinutes()).toEqual('thirty five');
     });
 
-    xtest('knows when it\'s morning', () => {
+    test('knows when it\'s morning', () => {
         const clock = new Clock('08:00');
 
         expect(clock.speakPartOfDay()).toEqual('in the morning');
