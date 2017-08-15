@@ -63,6 +63,12 @@ describe('the talking clock', () => {
         expect(clock.speakMinutes()).toEqual('thirty five');
     });
 
+    test('can speak forty-five past', () => {
+        const clock = new Clock('08:45');
+
+        expect(clock.speakMinutes()).toEqual('forty five');
+    });
+
     test('knows when it\'s morning', () => {
         const clock = new Clock('08:00');
 

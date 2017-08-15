@@ -15,8 +15,10 @@ class Clock {
     }
 
     speakMinutes() {
-        if(this.minutes === '01'){
+        if(this.minutes === '01') {
             return 'oh one';
+        } else if (this.minutes === '45') {
+            return 'forty five';
         }
 
         if (this.time === '08:10') {
