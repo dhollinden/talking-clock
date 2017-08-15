@@ -33,7 +33,7 @@ describe('the talking clock', () => {
         expect(clock.speakMinutes()).toEqual("o'clock");
     });
 
-    xtest('can speak single digit minutes', () => {
+    test('can speak single digit minutes', () => {
         const clock = new Clock('08:01');
 
         expect(clock.speakMinutes()).toEqual("oh one");

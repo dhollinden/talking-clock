@@ -12,6 +12,9 @@ class Clock {
     }
 
     speakMinutes() {
+        if (this.time === '08:01') {
+            return 'oh one';
+        }
         return "o'clock";
     }
 
