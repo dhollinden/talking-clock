@@ -1,7 +1,10 @@
 class Clock {
     constructor(time) {
         this.time = time;
+        this.hours = time.split(":")[0];
+        this.minutes = time.split(":")[1];
     }
+
 
     speakHours() {
         if (this.time === '08:00') {
@@ -12,9 +15,11 @@ class Clock {
     }
 
     speakMinutes() {
-        if (this.time === '08:01') {
+        if(this.minutes === '01'){
             return 'oh one';
-        } else if (this.time === '08:10') {
+        }
+
+        if (this.time === '08:10') {
             return 'ten';
         } else if (this.time === '08:20') {
             return 'twenty';
