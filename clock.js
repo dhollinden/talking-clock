@@ -11,6 +11,10 @@ class Clock {
         }
     }
 
+    speakMinutes() {
+        return "o'clock";
+    }
+
     speak() {
         if (this.time === '12:00') {
             return 'midday';
