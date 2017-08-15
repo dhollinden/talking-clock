@@ -6,6 +6,8 @@ class Clock {
     speakHours() {
         if (this.time === '08:00') {
             return 'eight';
+        }else if(this.time === '13:00'){
+            return 'one';
         }
     }
 
