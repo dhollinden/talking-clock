@@ -51,7 +51,7 @@ describe('the talking clock', () => {
         expect(clock.speakMinutes()).toEqual('twenty');
     });
 
-    xtest('can speak thirty-five past', () => {
+    test('can speak thirty-five past', () => {
         const clock = new Clock('08:35');
 
         expect(clock.speakMinutes()).toEqual('thirty five');
