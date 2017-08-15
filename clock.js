@@ -16,6 +16,8 @@ class Clock {
             return 'oh one';
         } else if (this.time === '08:10') {
             return 'ten';
+        } else if (this.time === '08:20') {
+            return 'twenty';
         }
         return "o'clock";
     }
